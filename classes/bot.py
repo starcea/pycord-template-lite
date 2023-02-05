@@ -11,7 +11,6 @@ from discord.ext.commands import Context
 from config import BAD, STATUS
 from constants import OPTION_TYPES, DATABASE_INIT
 from utils import setup_logging
-from .crypt import AESCipher
 from .database import Database
 
 
@@ -22,7 +21,6 @@ class Bot(commands.Bot):
         self.logger = getLogger(__name__)
         self.start_time = time()
         self.session = uuid4()
-        self.crypt = AESCipher(getenv("TOKEN"))
         self.db = Database
         for filename in listdir("functions"):
             if filename.endswith(".py"):
