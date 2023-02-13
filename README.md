@@ -1,3 +1,5 @@
+# Deprecated
+<details>
 # Pycord Template by Starcea
 ## Setup Virtual Environment and Necessary Files
 - Make Directory `errors` and `logs`
@@ -26,3 +28,4 @@
     > pip install -Ur requirements.txt
     ```
 ## Enjoy Programming!
+</details>
